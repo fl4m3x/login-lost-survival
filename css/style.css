@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffff;
+  filter: blur(2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 470px;
+  background: #ED213A;
+  padding: 30px 60px;
+  border-radius: 22px;
+}
+
+.logo {
+  height: 50px;
+  text-align: center;
+}
+
+.logo img {
+  height: 50px;
+  margin: -15px
+}
+
+.social-media button:last-child {
+  margin: 0;
+}
+
+.social-media button:hover {
+  opacity: .7;
+}
+
+.login-form h6 {
+  color: #f1f1f1;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.textbox {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.textbox input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: whitesmoke;
+  padding: 0 15px;
+  font-size: 16px;
+  outline: none;
+  color: #191919;
+  border-radius: 22px;
+}
+
+.textbox input:focus {
+  background: #d0d0d0 !important;
+  transition: 900ms;
+}
+
+.check-message {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #E60012;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+}
+
+.textbox input:focus+.check-message {
+  display: none;
+}
+
+.options {
+  margin-top: 15px;
+  color: #E60012;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.remember-me {
+  float: left;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #93291E;
+  margin-right: 15px;
+  position: relative;
+}
+
+.checkbox input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checked {
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.checkbox input:checked+.checked {
+  display: block;
+}
+
+.options a {
+  color: #ffff;
+  font-size: 14px;
+  float: right;
+}
+
+.login-btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  background: whitesmoke;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: .3s linear;
+  border-radius: 22px;
+}
+
+.login-btn.active {
+  background: #93291E;
+  color: #fff;
+}
+
+.login-btn-active:hover {
+  opacity: .7;
+}
+
+.hidden {
+  display: none;
+}
+
+.privacy-link {
+  text-align: center;
+  margin-top: 35px;
+  
+}
+
+.privacy-link p {
+  color: #f1f1f1;
+  font-size: 14px;
+}
+
+.dont-have-account {
+  font-size: 14px;
+  text-align: center;
+  color: whitesmoke;
+  margin: 20px;
+}
+
+.dont-have-account a{
+  color: #93291E;
+}
+
+.dont-have-account a:hover {
+  transition: 1000ms;
+  color: white;
+}
+
+@media screen and (max-width:470px) {
+  body {
+    background: #202020;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost Survival Login Form</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="login-form">
+    <div class="logo"><img src="assets/logos3.png" alt=""></div>
+    <h6>Faça login na cidade</h6>
+
+    <form action="">
+      <div class="textbox">
+        <input type="text" placeholder="Email">
+        <span class="check-message hidden">Required</span>
+      </div>
+
+      <div class="textbox">
+        <input type="password" placeholder="Senha">
+        <span class="check-message hidden">Required</span>
+      </div>
+
+      <div class="options">
+        <label class="remember-me">
+          <span class="checkbox">
+            <input type="checkbox">
+            <span class="checked"></span>
+          </span>
+          Lembre-se de mim
+        </label>
+
+        <a href="#">Esqueci a minha senha</a>
+      </div>
+
+      <input type="submit" value="Clique aqui para entrar" class="login-btn" disabled>
+      <div class="privacy-link">
+        <p>Não tem cadastro em nosso fórum?</p>
+      </div>
+    </form>
+
+    <div class="dont-have-account">
+      Caso não tenha cadastro,
+      <a href="#">clique aqui</a>
+    </div>
+  </div>
+
+<script src="index.js"></script>
+
+</html>
